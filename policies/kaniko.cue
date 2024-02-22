@@ -77,3 +77,11 @@ package tekton
 	optional:    true
 	mountPath:   "/kaniko/.docker"
 }]}
+
+#Results: {[{
+	name:        "IMAGE_DIGEST"
+	description: "Digest of the image just built."
+}, {
+	name:        "IMAGE_URL"
+	description: "URL of the image just built."
+}]}

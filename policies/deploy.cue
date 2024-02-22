@@ -54,7 +54,7 @@ package tekton
 		A Workspace containing a argocd server and credentials.
 
 		"""
-}]
+},]
 }
 
 #Steps: {[{

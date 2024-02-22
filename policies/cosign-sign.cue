@@ -37,8 +37,9 @@ package tekton
 		name:        "cosign"
 		description: "Cosign private key to sign image"
 	},
-
+	
 ]}
+
 
 #Metadata: {
 	name: string | *#Name
