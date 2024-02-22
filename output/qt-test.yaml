@@ -1,0 +1,17 @@
+apiVersion: tekton.dev/v1beta1
+kind: ClusterTask
+metadata:
+    name: install-and-run-qt
+spec:
+    description: The git repo will be cloned onto the volume backing this Workspace.
+    params:
+        - description: server URL of quality-trace
+          name: QT_SERVER
+    steps:
+        - image: ghcr.io/intelops/quality-trace/cli:latest
+          name: install-and-run-qt
+          script: |4
+            # Configure and Run Quality-trace CLI
+            quality-trace configure --endpoint $(params.QT_SERVER)
+            quality-trace run test --file /workspace/output/qt_test/test.yaml -o json
+    workspaces: []
