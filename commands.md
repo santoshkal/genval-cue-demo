@@ -1,7 +1,7 @@
 # Validate and Generate Tekton ClusterTasks
 
 ## Cosign-verify 
-`./genval --mode cue --reqinput ./inputs/cosign-verify.yaml --resource ClusterTask --policy ./polices/common.cue --policy ./policies/cosign-verify.cue`
+`./genval --mode cue --reqinput ./inputs/cosign-verify.yaml --resource ClusterTask --policy ./policies/common.cue --policy ./policies/cosign-verify.cue`
 
 
 ## Cosign Sign
